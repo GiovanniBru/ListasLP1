@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+       int idade;
+       float preco; 
+       float desc; 
+       float valor;
+       
+       scanf("%f", &preco);
+       scanf("%d", &idade);
+       
+       if(idade <= 18){
+                desc = preco * 0.1;
+                valor = preco - desc; 
+                
+       }
+       
+       if(idade > 18){
+                desc = preco * 0.2;
+                valor = preco - desc; 
+       }
+       
+       printf("%.2f de Desconto, valor final: %.2f", desc, valor);
+       
+       return 0; 
+       
+       
+}
+
+
